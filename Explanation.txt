@@ -1,0 +1,67 @@
+Given a 2-dimensional grid of integers, each value in the grid represents the color of the grid square at that location.
+Two squares belong to the same connected component if and only if they have the same color and are next to each other in any of the 4 directions.
+The border of a connected component is all the squares in the connected component that are either 4-directionally adjacent to a square not in the component, 
+or on the boundary of the grid (the first or last row or column).
+Given a square at location (r0, c0) in the grid and a color, color the border of the connected component of that square with the given color, and return the final grid.
+
+Input Description:
+First line contains N,r0,c0,color as integers.
+Rest lines conatins, NxN matrix.
+
+Output Description:
+Print the matrix after coloring.
+
+Sample Input:
+2 0 0 3
+1 1
+1 2
+
+Sample Output
+[3, 3] [3, 2]
+
+Explanation:
+By colouring 0,0 the final output can be printed.
+
+Sample Input:
+3 1 2 4
+8 3 5
+2 3 5
+8 7 6
+
+Sample Output:
+[8, 3, 4] [2, 3, 4] [8, 7, 6]
+
+Sample Input:
+2 1 0 6
+9 8
+
+Sample Output:
+10 11
+
+Sample Input:
+3 2 2 6
+1 2 3
+4 5 7
+8 9 10
+
+Sample Output:
+[1, 2, 3] [4, 5, 7] [8, 9, 6]
+[9, 8] [6, 11]
+
+Sample Input:
+4 3 2 1
+4 3 5 6
+8 3 2 7
+9 0 7 6
+7 3 4 9
+
+Sample Output:
+[4, 3, 5, 6] [8, 3, 2, 7] [9, 0, 7, 6] [7, 3, 1, 9]
+
+Sample Input:
+2 1 1 0
+2 3
+4 5
+
+Sample Output:
+[2, 3] [4, 0]
